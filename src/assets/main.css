@@ -1,0 +1,16 @@
+:root {
+  --bg-beige: #F4EBE1; 
+  --text-blue: #1A365D; 
+  --accent-blue: #2B6CB0; 
+}
+
+body {
+  background-color: var(--bg-beige);
+  color: var(--text-blue);
+  font-family: 'Inter', sans-serif; 
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; 
+}
