@@ -13,12 +13,12 @@
 
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                    <div id="last-dot" class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="date-badge">2024 - Présent</span>
                         <h3>BUT Informatique</h3>
                         <h4 class="school">Université Sorbonne Paris Nord - IUT de Villetaneuse</h4>
-                        <p>Développement d'applications mobiles et web, algorithmique, bases de données, systèmes et réseaux, management</p>
+                        <p>Spécialisation en réalisation d'applications: Conception, Développement, Validation</p>
                     </div>
                 </div>
 
@@ -188,6 +188,11 @@ onMounted(() => {
     z-index: 2; 
     box-shadow: 0 0 0 4px rgba(248, 244, 230, 0.1); 
 }
+
+#last-dot {
+    background-color: var(--bg-beige); 
+}
+
 .timeline-content {
     background-color: rgba(248, 244, 230, 0.05); 
     backdrop-filter: blur(4px); padding: 2rem;
