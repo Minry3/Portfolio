@@ -20,7 +20,7 @@
                     </div>
                     <div class="card-right">
                         <h3>Apprentie R&D - Développeuse FullStack</h3>
-                        <p>Développement et maintenance d'applications web</p>
+                        <p>Développement et maintenance de solutions logicielles, conception d'un outil de gestion interne, revue de code </p>
                         <div class="tags-container">
                             <span class="skill-tag">C#</span>
                             <span class="skill-tag">MudBlazor</span>
