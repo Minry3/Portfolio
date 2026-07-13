@@ -27,7 +27,12 @@
                     <div class="card-details">
                         <div class="card-details-inner">
                             <p>{{ project.details }}</p>
-                            <a :href="project.github" target="_blank" class="btn-primary" @click.stop>Voir sur GitHub</a>
+                            <div class="btn-wrapper">
+                                <a :href="project.github" target="_blank" class="btn-primary" @click.stop>
+                                    <img src="../assets/logos/github-white-icon.webp" alt="Logo GitHub" class="btn-icon">
+                                    Voir sur GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -39,6 +44,7 @@
 <script setup>
 import { ref } from 'vue'; 
 import SectionHeader from './SectionHeader.vue';
+import imgEchec from '../assets/Projets/jeu-echecs-java.png';
 
 const openProject = ref(null);
 
@@ -48,21 +54,41 @@ function toggleProject(title) {
 
 const projects = [
     { 
-        title: "Application de Gestion", 
+        title: "Jeu d'échecs", 
+        year: "2025",
+        details: `Création d’un jeu d’échecs en java, dans le cadre de mon BUT Informatique. Celui-ci peut être lancé à partir d’un terminal comme celui de Linux.
+
+                Il s’agit d’une partie simplifiée, permettant de détecter les cas de pat ainsi que d’échec et mat.
+
+                La programmation du jeu a été réalisée de façon collaborative à l’aide de Git. L’objectif de ce projet était notamment de comprendre et de maîtriser la programmation orientée objet dans un contexte concret.`,
+        tags: ["Java", "Git"],
+        image: imgEchec, 
+        github: "https://github.com/Minry3/Jeu-echec-java" 
+    },
+    { 
+        title: "MediaTek86", 
         year: "2024",
-        details: "Développement d'une interface complexe avec une architecture robuste pour la gestion de données en temps réel.",
-        tags: ["React", "API"],
+        details: "[ajouter description]",
+        tags: ["C#"],
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1920px-Image_created_with_a_mobile_phone.png", 
+        github: "https://github.com/Minry3/MediaTek86" 
+    },
+    { 
+        title: "OWLearning", 
+        year: "2025-2026",
+        details: "[ajouter description]",
+        tags: ["SpringBoot", "Vue.js", "SQL"],
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1920px-Image_created_with_a_mobile_phone.png", 
+        github: "https://github.com/OWLearning-Project/OWLearning" 
+    },
+    { 
+        title: "On Sort ? (Projet en cours)", 
+        year: "2026",
+        details: "[ajouter description]",
+        tags: ["Vue.js"],
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1920px-Image_created_with_a_mobile_phone.png", 
         github: "#" 
     },
-    { 
-        title: "Site Vitrine E-commerce", 
-        year: "2023",
-        details: "Refonte totale d'une boutique en ligne avec un focus sur l'UX, la performance et le design responsive.",
-        tags: ["JavaScript", "Tailwind"],
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1920px-Image_created_with_a_mobile_phone.png", 
-        github: "#" 
-    }
 ];
 </script>
 
@@ -161,5 +187,46 @@ const projects = [
 .card-details .btn-primary {
     margin: 0 2rem 2rem 2rem;
     display: inline-block;
+}
+
+.card-details-inner p {
+    white-space: pre-line;
+    text-align: justify;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  margin-top: 25px; 
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  padding: 12px 20px;
+  background-color: var(--accent-blue);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.btn-primary:hover {
+  background-color: var(--text-blue);
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  width: 20px;  
+  height: 20px;
+  object-fit: contain;
+  transform: translateY(-1px); 
+  margin-bottom: -4px;
 }
 </style>
