@@ -1,61 +1,124 @@
 <template>
     <section id="skills" class="skills-section">
         <div class="skills-container">
-            <div class="section-header">
-                <p class="eyebrow">Mon expertise</p>
-                <h2 class="section-title">Mes Compétences</h2>
-            </div>
+            <SectionHeader title="Mes Compétences" />
 
             <div class="skills-grid">
                 
                 <div class="skill-card">
                     <div class="card-header">
-                        <h3>Frontend</h3>
+                        <h3>Front-End</h3>
                     </div>
-                    <p class="card-desc">Création d'interfaces web dynamiques, fluides et responsives.</p>
                     <div class="tags-container">
-                        <span class="skill-tag">Vue.js</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">Tailwind</span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/html.png" alt="HTML" class="skill-icon"> HTML
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/css.png" alt="CSS" class="skill-icon"> CSS
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/js.png" alt="JavaScript" class="skill-icon"> JavaScript
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/vue-js.png" alt="Vue.js" class="skill-icon"> Vue.js
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/mudblazor.png" alt="MudBlazor" class="skill-icon"> MudBlazor
+                        </span>
                     </div>
                 </div>
 
                 <div class="skill-card">
                     <div class="card-header">
-                        <h3>Backend & BDD</h3>
+                        <h3>Back-End</h3>
                     </div>
-                    <p class="card-desc">Développement d'APIs robustes et gestion de bases de données.</p>
                     <div class="tags-container">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/c-sharp.png" alt="C#" class="skill-icon">C#
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/java.webp" alt="Java" class="skill-icon">Java
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/python.png" alt="Python" class="skill-icon">Python
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/node-js.png" alt="Node.js" class="skill-icon">Node.js
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/spring.png" alt="SpringBoot" class="skill-icon">SpringBoot
+                        </span>
                     </div>
                 </div>
 
                 <div class="skill-card">
                     <div class="card-header">
-                        <h3>Outils & Design</h3>
+                        <h3>Base de données & Architecture</h3>
                     </div>
-                    <p class="card-desc">Conception UI/UX et gestion collaborative des projets.</p>
                     <div class="tags-container">
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Git/GitHub</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Agile</span>
-                        <span class="skill-tag">UI/UX</span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/postgresql.png" alt="PostgreSQL" class="skill-icon">PostgreSQL
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/sql.png" alt="SQL" class="skill-icon">SQL
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/docker.png" alt="Docker" class="skill-icon">Docker
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/linux.png" alt="Linux" class="skill-icon">Linux
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/windows-11.png" alt="Windows" class="skill-icon">Windows
+                        </span>
                     </div>
                 </div>
 
+                <div class="skill-card">
+                    <div class="card-header">
+                        <h3>Outils & Logiciels</h3>
+                    </div>
+                    <div class="tags-container">
+                        <span class="skill-tag">
+                            <img src="../assets/logos/git.png" alt="Git" class="skill-icon">Git
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/vscode.png" alt="VS Code" class="skill-icon">VS Code
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/visual-studio.png" alt="Visual Studio" class="skill-icon">Visual Studio
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/android-studio-icon.png" alt="Android Studio" class="skill-icon">Android Studio
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/canva-icon.png" alt="Canva" class="skill-icon">Canva
+                        </span>
+                        <span class="skill-tag">
+                            <img src="../assets/logos/microsoft-office.png" alt="Pack Office" class="skill-icon">Pack Office
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="card-header">
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="tags-container">
+                        <span class="skill-tag">Rigoureuse</span>
+                        <span class="skill-tag">Curieuse</span>
+                        <span class="skill-tag">Autonome</span>
+                        <span class="skill-tag">Organisée</span>
+                        <span class="skill-tag">À l’écoute</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </template>
 
 <script setup>
+import SectionHeader from './SectionHeader.vue';
 </script>
 
 <style scoped>
@@ -68,42 +131,6 @@
     margin: 0 auto;
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.eyebrow {
-    color: var(--accent-blue);
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    font-size: 0.875rem;
-    margin-bottom: 0.5rem;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    color: var(--text-blue);
-    margin: 0;
-    font-weight: 800;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 1rem;
-}
-
-.section-title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70px;
-    height: 5px;
-    background: var(--accent-blue);
-    border-radius: 3px;
-}
-
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -111,13 +138,11 @@
 }
 
 .skill-card {
-    background-color: rgba(255, 255, 255, 0.4); 
+    background-color: rgba(255, 255, 255, 0.6); 
     border-radius: 16px;
     padding: 2rem;
     border: 2px solid var(--accent-blue);
-    
     box-shadow: 6px 6px 0px rgba(43, 108, 176, 0.15); 
-    
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -133,17 +158,6 @@
     align-items: center;
     gap: 1.25rem;
     margin-bottom: 1rem;
-}
-
-.icon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    background-color: rgba(43, 108, 176, 0.1); 
-    border-radius: 12px;
-    font-size: 1.5rem;
 }
 
 .skill-card h3 {
@@ -177,6 +191,10 @@
     font-size: 0.85rem;
     font-weight: 600;
     transition: all 0.2s ease;
+    
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem; 
 }
 
 .skill-tag:hover {
@@ -185,13 +203,9 @@
     cursor: default;
 }
 
-@media (max-width: 768px) {
-    .skills-section {
-        padding: 4rem 1.5rem;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
+.skill-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain; 
 }
 </style>

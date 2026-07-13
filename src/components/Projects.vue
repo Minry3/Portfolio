@@ -1,10 +1,7 @@
 <template>
     <section id="projects" class="projects-section">
         <div class="projects-container">
-            <div class="section-header">
-                <p class="eyebrow">Portfolio</p>
-                <h2 class="section-title">Mes Projets</h2>
-            </div>
+            <SectionHeader title="Mes Projets" />
 
             <div class="projects-grid">
                 <div 
@@ -41,6 +38,7 @@
 
 <script setup>
 import { ref } from 'vue'; 
+import SectionHeader from './SectionHeader.vue';
 
 const openProject = ref(null);
 
@@ -72,32 +70,6 @@ const projects = [
 .projects-section { padding: 8rem 2rem; }
 .projects-container { max-width: 1100px; margin: 0 auto; }
 
-.section-header { text-align: center; margin-bottom: 5rem; }
-
-.section-title { 
-    font-size: 3rem; 
-    color: var(--text-blue); 
-    margin: 0; 
-    font-weight: 800; 
-    position: relative;
-    display: inline-block;
-    padding-bottom: 1rem;
-}
-
-.section-title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70px;
-    height: 5px;
-    background: var(--accent-blue);
-    border-radius: 3px;
-}
-
-.eyebrow { color: var(--accent-blue); text-transform: uppercase; font-weight: 700; letter-spacing: 0.15em; margin-bottom: 1rem; }
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -106,7 +78,7 @@ const projects = [
 }
 
 .project-card {
-    background: transparent; 
+    background-color: rgba(255, 255, 255, 0.6); ; 
     border: 2px solid var(--accent-blue);
     border-radius: 20px;
     overflow: hidden;

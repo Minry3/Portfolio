@@ -1,31 +1,24 @@
 <template>
-    <section id="about" class="about-section">
-        <div class="bg-decoration">
+    <section id="about" class="about-section section-full-dark">
+        <div class="bg-decorations-wrapper">
             <div class="blob blob-about-1"></div>
             <div class="blob blob-about-2"></div>
             <div class="dots dots-about-1"></div>
         </div>
 
         <div class="about-container">
-            <div class="section-header">
-                <p class="eyebrow">Apprenez à me connaître</p>
-                <h2 class="section-title">À propos de moi</h2>
-            </div>
+            <SectionHeader title="À propos de moi" />
             
             <div class="about-content">
                 <div class="intro-text">
-                    <p>Je m'appelle <span class="highlight">Noémie Chhun</span>. J’ai toujours aimé comprendre comment les choses sont créées. Pour moi, l’informatique est comparable à des Lego : comment l’assemblage de certains éléments permet-il d’atteindre ce résultat final ? Cette curiosité, née au lycée, continue de me guider chaque jour.</p>
-                    
+                    <p>Je m'appelle <span class="highlight">Noémie Chhun</span>. J’ai toujours aimé comprendre comment les choses sont créées. Pour moi, l’informatique est comparable à un voyage constant: nous découvrons toujours de nouvelles technologies, et essayons de comprendre comment elles peuvent nous être utiles. Cette curiosité, née au lycée, continue de me guider chaque jour.</p>
                     <p>Actuellement, je suis en deuxième année de BUT Informatique au sein de l'IUT de Villetaneuse, tout en évoluant comme apprentie R&D chez Salvia Développement. Je suis spécialisée dans la conception de logiciels et d'applications. J'aime notamment créer des outils répondant à des besoins spécifiques.</p>
-                    
                     <div class="objectif-card">
                         <h3>Mon objectif ?</h3>
                         <p>Concevoir des solutions intuitives pour améliorer et simplifier le quotidien des utilisateurs.</p>
                     </div>                    
                     <p>En rassemblant toutes ces connaissances, j'aimerais à terme pouvoir intégrer une école d’ingénieur et finaliser ma formation pour devenir ingénieure dans la conception logicielle et réaliser mon objectif initial.</p>
-                    
                     <p>Pour en connaître davantage sur mes compétences, mon parcours et mes projets, n’hésitez pas à poursuivre l’exploration de ce portfolio.</p>
-                    
                     <h4 class="conclusion-text"><strong>En vous souhaitant une bonne visite !</strong></h4>
                 </div>
             </div>
@@ -34,31 +27,16 @@
 </template>
 
 <script setup>
+import SectionHeader from './SectionHeader.vue';
 </script>
 
 <style scoped>
 .about-section {
-    background-color: var(--accent-blue); 
     padding: 6rem 2rem; 
     display: flex;
     justify-content: center; 
     align-items: center;
     box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.05);
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    position: relative;
-    overflow: hidden;
-}
-
-.bg-decorations {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: 0;
 }
 
 @keyframes morph {
@@ -104,27 +82,6 @@
     z-index: 1;
     max-width: 900px;
     margin: 0 auto;
-}
-
-.section-header {
-    text-align: center; 
-    margin-bottom: 2.5rem;
-}
-
-.eyebrow {
-    color: rgba(248, 244, 230, 0.7); 
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    font-size: 0.875rem;
-    margin-bottom: 1rem;
-}
-
-.section-title {
-    font-size: 3rem;
-    color: var(--bg-beige, #f8f4e6); 
-    margin: 0;
-    font-weight: 800;
 }
 
 .about-content {
@@ -189,21 +146,13 @@
 }
 
 @media (max-width: 768px) {
-    .about-section {
-        padding: 4rem 1.5rem; 
-    }
-
-    .section-title {
-        font-size: 2.25rem;
-    }
-    
     .about-content {
         padding: 2rem 1.5rem; 
     }
     
     .intro-text {
         font-size: 1.05rem;
-        text-align: left; 
+        text-align: justify; 
     }
     
     .objectif-card {

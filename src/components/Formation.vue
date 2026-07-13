@@ -1,15 +1,12 @@
 <template>
-    <section id="education" class="education-section">
-        <div class="bg-decorations">
+    <section id="education" class="education-section section-full-dark">
+        <div class="bg-decorations-wrapper">
             <div class="blob blob-1"></div>
             <div class="dots dots-1"></div>
         </div>
 
         <div class="education-container">
-            <div class="section-header">
-                <p class="eyebrow">Mon Parcours</p>
-                <h2 class="section-title">Formation</h2>
-            </div>
+            <SectionHeader title="Formation" />
 
             <div class="timeline">
                 <div class="timeline-item">
@@ -47,7 +44,8 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted } from 'vue';
+import SectionHeader from './SectionHeader.vue';
 
 onMounted(() => {
     const items = document.querySelectorAll('.timeline-item');
@@ -68,20 +66,7 @@ onMounted(() => {
 
 <style scoped>
 .education-section {
-    position: relative;
     padding: 6rem 2rem;
-    overflow: hidden;
-    background-color: var(--accent-blue);
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-}
-
-.bg-decorations {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    overflow: hidden;
-    pointer-events: none; 
-    z-index: 0;
 }
 
 @keyframes morph {
@@ -120,36 +105,6 @@ onMounted(() => {
     z-index: 1; 
     max-width: 900px; 
     margin: 0 auto;
-}
-
-.section-header { text-align: center; margin-bottom: 5rem; }
-
-.eyebrow {
-    color: rgba(248, 244, 230, 0.7); 
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    font-size: 0.875rem;
-    margin-bottom: 0.5rem;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    color: var(--bg-beige); 
-    margin: 0;
-    font-weight: 800;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 1rem;
-}
-
-.section-title::after {
-    content: "";
-    position: absolute;
-    bottom: 0; left: 50%; transform: translateX(-50%);
-    width: 70px; height: 5px;
-    background: var(--bg-beige); 
-    border-radius: 3px;
 }
 
 .timeline { position: relative; }
@@ -219,7 +174,6 @@ onMounted(() => {
 .timeline-content p { margin: 0; color: var(--bg-beige); opacity: 0.9; line-height: 1.6; font-size: 0.95rem; }
 
 @media screen and (max-width: 768px) {
-    .education-section { padding: 4rem 1.5rem; }
     .timeline-item { padding-left: 45px; }
     .timeline::after { left: 10px; }
     .timeline-dot { left: 0px; width: 20px; height: 20px; top: 25px; }

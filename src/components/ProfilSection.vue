@@ -8,7 +8,7 @@
       </div>
       
       <p class="description">
-        Etudiante en deuxième année de BUT Informatique au sein de l'IUT de Villetaneuse, en alternance chez Salvia Développement.
+        Étudiante en deuxième année de BUT Informatique au sein de l'IUT de Villetaneuse, en alternance chez Salvia Développement.
       </p>
 
       <div class="contact-email">

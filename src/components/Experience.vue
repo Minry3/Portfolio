@@ -1,16 +1,13 @@
 <template>
-    <section id="experience" class="experience-section">
-        <div class="bg-decorations">
+    <section id="experience" class="experience-section section-full-dark">
+        <div class="bg-decorations-wrapper">
             <div class="blob blob-right"></div>
             <div class="blob blob-left"></div>
             <div class="dots-clean"></div>
         </div>
 
         <div class="experience-container">
-            <div class="section-header">
-                <p class="eyebrow">Mon parcours</p>
-                <h2 class="section-title">Expérience Professionnelle</h2>
-            </div>
+            <SectionHeader title="Expérience Professionnelle" />
 
             <div class="experience-list">
                 <div class="experience-card">
@@ -49,22 +46,13 @@
     </section>
 </template>
 
+<script setup>
+import SectionHeader from './SectionHeader.vue';
+</script>
+
 <style scoped>
 .experience-section { 
-    position: relative;
     padding: 8rem 2rem; 
-    background-color: var(--accent-blue);
-    overflow: hidden;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-}
-
-.bg-decorations {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: 0;
 }
 
 @keyframes morph-alt {
@@ -92,23 +80,6 @@
 
 .experience-container { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
 
-.section-header { margin-bottom: 5rem; text-align: center; }
-
-.eyebrow { 
-    color: rgba(248, 244, 230, 0.7); 
-    text-transform: uppercase; font-weight: 700; letter-spacing: 0.15em; font-size: 0.95rem; margin-bottom: 1rem; 
-}
-
-.section-title { 
-    font-size: 3rem; color: var(--bg-beige); margin: 0; font-weight: 800; 
-    position: relative; display: inline-block; padding-bottom: 1rem;
-}
-
-.section-title::after {
-    content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
-    width: 70px; height: 5px; background: var(--bg-beige); border-radius: 3px;
-}
-
 .experience-card {
     display: grid; grid-template-columns: 240px 1fr; gap: 3rem; padding: 3rem 0;
     border-bottom: 1px solid rgba(248, 244, 230, 0.15);
@@ -133,6 +104,5 @@
 
 @media (max-width: 768px) {
     .experience-card { grid-template-columns: 1fr; gap: 1.5rem; }
-    .section-title { font-size: 2.25rem; }
 }
 </style>
