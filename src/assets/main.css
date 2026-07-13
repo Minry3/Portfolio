@@ -73,3 +73,14 @@ html {
   pointer-events: none;
   z-index: 0;
 }
+
+@media (max-width: 768px) {
+
+    .section-title {
+        font-size: 2rem; 
+        max-width: 100vw; 
+        padding: 0 15px 1rem 15px; 
+        overflow-wrap: break-word; 
+        word-wrap: break-word;
+    }
+}
