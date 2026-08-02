@@ -11,7 +11,7 @@
             
             <div class="about-content">
                 <div class="intro-text">
-                    <p>Je m'appelle <span class="highlight">Noémie Chhun</span>. J’ai toujours aimé comprendre comment les choses sont créées. Pour moi, l’informatique est comparable à un voyage constant: nous découvrons toujours de nouvelles technologies, et essayons de comprendre comment elles peuvent nous être utiles. Cette curiosité, née au lycée, continue de me guider chaque jour.</p>
+                    <p>Bonjour, moi c'est <span class="highlight">Noémie Chhun</span> ! J’ai toujours aimé comprendre comment les choses sont créées. Pour moi, l’informatique est comparable à un voyage constant: nous découvrons toujours de nouvelles technologies, et essayons de comprendre comment elles peuvent nous être utiles. Cette curiosité, née au lycée, continue de me guider chaque jour.</p>
                     <p>Actuellement, je suis en deuxième année de BUT Informatique au sein de l'IUT de Villetaneuse, tout en évoluant comme apprentie R&D chez Salvia Développement. Je suis spécialisée dans la conception de logiciels et d'applications. J'aime notamment créer des outils répondant à des besoins spécifiques.</p>
                     <div class="objectif-card">
                         <h3>Mon objectif ?</h3>
