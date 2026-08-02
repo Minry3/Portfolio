@@ -22,8 +22,8 @@
       </div>
 
       <div class="actions">
-        <a href="/mon-cv.pdf" class="btn-cv" download>
-          <span class="icon">↓</span> Mon CV
+        <a href="CV_Noemie_CHHUN.pdf" target="_blank" rel="noopener noreferrer" class="btn-cv">
+          Voir mon CV
         </a>
         
         <div class="social-links">
