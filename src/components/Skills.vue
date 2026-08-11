@@ -132,12 +132,15 @@ import SectionHeader from './SectionHeader.vue';
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2.5rem; 
 }
 
 .skill-card {
+    flex: 1 1 300px;
+    max-width: 450px;
     background-color: rgba(255, 255, 255, 0.6); 
     border-radius: 16px;
     padding: 2rem;
