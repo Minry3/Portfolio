@@ -12,9 +12,9 @@
             <div class="about-content">
                 <div class="intro-text">
                     <p>Bonjour, moi c'est <span class="highlight">Noémie Chhun</span> ! J’ai toujours aimé comprendre comment les choses sont créées. Pour moi, l’informatique est comparable à un voyage constant: nous découvrons toujours de nouvelles technologies, et essayons de comprendre comment elles peuvent nous être utiles. Cette curiosité, née au lycée, continue de me guider chaque jour.</p>
-                    <p>Actuellement, je suis en deuxième année de BUT Informatique au sein de l'IUT de Villetaneuse, tout en évoluant comme apprentie R&D chez Salvia Développement. Je suis spécialisée dans la conception de logiciels et d'applications. J'aime notamment créer des outils répondant à des besoins spécifiques.</p>
+                    <p>Actuellement, je suis en deuxième année de BUT Informatique au sein de l'IUT de Villetaneuse, tout en évoluant comme apprentie R&D chez Salvia Développement. Je suis notamment spécialisée dans la conception de logiciels et d'applications.</p>
                     <div class="objectif-card">
-                        <h3>Mon objectif ?</h3>
+                        <h3>Quel est mon objectif ?</h3>
                         <p>Concevoir des solutions intuitives pour améliorer et simplifier le quotidien des utilisateurs.</p>
                     </div>                    
                     <p>En rassemblant toutes ces connaissances, j'aimerais à terme pouvoir intégrer une école d’ingénieur et finaliser ma formation pour devenir ingénieure dans la conception logicielle et réaliser mon objectif initial.</p>
