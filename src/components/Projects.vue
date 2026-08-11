@@ -98,7 +98,7 @@ const projects = [
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 450px), 1fr));
     gap: 3rem;
     align-items: start;
 }
