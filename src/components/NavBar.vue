@@ -11,6 +11,7 @@
         <a href="#education" class="nav-link" @click.prevent="scrollToSection('#education')">Formation</a>
         <a href="#experience" class="nav-link" @click.prevent="scrollToSection('#experience')">Expérience</a>
         <a href="#projects" class="nav-link" @click.prevent="scrollToSection('#projects')">Projets</a>
+        <a href="#veille" class="nav-link" @click.prevent="scrollToSection('#veille')">Veille Technologique</a>
       </nav>
 
       <button class="mobile-toggle" @click="toggleMenu" aria-label="Menu">
@@ -27,6 +28,7 @@
         <a href="#education" class="mobile-link" @click.prevent="scrollToSection('#education')">Formation</a>
         <a href="#experience" class="mobile-link" @click.prevent="scrollToSection('#experience')">Expérience</a>
         <a href="#projects" class="mobile-link" @click.prevent="scrollToSection('#projects')">Projets</a>
+        <a href="#veille" class="mobile-link" @click.prevent="scrollToSection('#veille')">Veille Technologique</a>
       </nav>
     </div>
   </header>
@@ -56,9 +58,15 @@ const scrollToSection = (sectionId) => {
   } else {
     const element = document.querySelector(sectionId);
     if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+      
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      
+      const pixelsAjustement = 60; 
+      
+      window.scrollTo({
+        top: elementPosition - navbarHeight + pixelsAjustement,
+        behavior: 'smooth'
       });
     }
   }
@@ -210,16 +218,17 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.5rem; 
 }
 
 .mobile-link {
-  font-size: 2rem;
+  font-size: 1.4rem; 
   font-weight: 800;
   color: var(--text-blue, #1A365D);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
   transition: color 0.3s ease;
 }
 

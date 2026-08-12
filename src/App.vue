@@ -7,6 +7,8 @@
     <Formation /> 
     <Experience />
     <Projects />
+    <Veille />
+    <Footer />
   </div>
 </template>
 
@@ -18,6 +20,8 @@ import Formation from './components/Formation.vue';
 import Experience from './components/Experience.vue';
 import Projects from './components/Projects.vue';
 import NavBar from './components/NavBar.vue';
+import Veille from './components/Veille.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <style>
