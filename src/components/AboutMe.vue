@@ -146,8 +146,12 @@ import SectionHeader from './SectionHeader.vue';
 }
 
 @media (max-width: 768px) {
+    .about-section {
+        padding: 4rem 1rem;
+    }
+
     .about-content {
-        padding: 2rem 1.5rem; 
+        padding: 2rem 1.2rem; 
     }
     
     .intro-text {
@@ -156,7 +160,7 @@ import SectionHeader from './SectionHeader.vue';
     }
     
     .objectif-card {
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
         margin: 2rem 0;
     }
 }
