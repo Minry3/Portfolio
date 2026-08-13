@@ -121,6 +121,8 @@ onUnmounted(() => {
   letter-spacing: -0.5px;
   position: relative;
   z-index: 1001; 
+  flex-shrink: 0; 
+  margin-right: 1.5rem; 
 }
 
 .dot {
@@ -141,6 +143,7 @@ onUnmounted(() => {
   letter-spacing: 1px;
   position: relative;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -236,7 +239,16 @@ onUnmounted(() => {
   color: var(--accent-blue, #1E40AF);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+  .desktop-nav {
+    gap: 1.2rem;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1050px) {
   .desktop-nav {
     display: none;
   }
